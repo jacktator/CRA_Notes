@@ -8,7 +8,7 @@
 </p>
 A client-side only note-taking app.
 
-[Planning](Planning.md) | [Live Site](https://notes-crn.netlify.com)
+[Planning](Planning.md) | [Live Site](https://notes-crn.netlify.com) | [UI Library](https://notes-crn.netlify.com/storybook/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -23,6 +23,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+### `yarn storybook`
+
+Runs the storybook for inspecting UI elements.
+Open [https//localhost:9009](http://localhost:9009) to view it in the browser.
 
 ### `yarn test`
 
