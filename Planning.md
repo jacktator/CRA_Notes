@@ -2,14 +2,14 @@ To demonstrate architecture ability, I prioritized showing off knowledge of exis
 
 # Packages
 
-- React
-- PropTypes
-- MaterialUI
-- DraftJS
+- React (Dev)
+- PropTypes (Dev)
+- MaterialUI (UI)
+- DraftJS (UI)
+- StyledComponents (UI)
+- Storybook (UI)
+- Netlify (CI & CD)
 - notistack
-- StyledComponents
-- Storybook
-- Netlify
 
 # Features by Priority
 
@@ -22,3 +22,4 @@ Nice to Have:
 
 - Markdown (DraftJS)
 - Server Persistance (ORM & MongoDB)
+

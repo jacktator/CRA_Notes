@@ -1,5 +1,11 @@
 # Notes App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/30668599-42b9-4981-819c-a42dd50947e2/deploy-status)](https://app.netlify.com/sites/notes-crn/deploys)
+<p>
+    <a href="https://twitter.com/intent/follow?screen_name=jacktator">
+        <img src="https://badgen.net/twitter/follow/jacktator?icon=twitter&label=%40storybookjs" alt="Official Twitter Handle" />
+    </a>
+</p>
 A client-side only note-taking app.
 
 [Planning](Planning.md)
