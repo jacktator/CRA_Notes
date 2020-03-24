@@ -1,7 +1,11 @@
 import React from "react";
-import DesktopAppBar from './index';
+import NoteAppBar from './';
 import {dummyUser as user} from "../../data/user";
+import {BrowserRouter} from "react-router-dom";
 
-export default { title: 'Navbar' };
+export default {
+  title: 'NoteAppBar',
+  decorators: [storyFn => <BrowserRouter>{storyFn()}</BrowserRouter>],
+};
 
-export const Desktop = () => <DesktopAppBar user={user}/>;
+export const Default = () => <NoteAppBar user={user}/>;

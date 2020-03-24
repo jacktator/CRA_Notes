@@ -10,7 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import AddIcon from '@material-ui/icons/Add';
 import {Link} from "react-router-dom";
 
-const DesktopAppBar = props => {
+const NoteAppBar = props => {
 
   const {
     user,
@@ -47,8 +47,8 @@ const DesktopAppBar = props => {
   );
 };
 
-DesktopAppBar.propTypes = {
+NoteAppBar.propTypes = {
   user: UserType,
 };
 
-export default DesktopAppBar;
+export default NoteAppBar;
