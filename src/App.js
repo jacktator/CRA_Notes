@@ -2,19 +2,8 @@ import React, { Component } from 'react';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 import {NotesGlobalStyle, notesTheme} from "./App.theme"
 import {ThemeProvider} from "styled-components";
-import Page from "./containers/Page";
-
-const AllNotes = () => (
-  <Page title="Current Tasks">
-    1
-  </Page>
-);
-
-const NewNote = () => (
-  <Page title="New Note">
-    2
-  </Page>
-);
+import AllNotes from "./components/AllNotes";
+import NewNote from "./components/NewNote";
 
 class App extends Component {
 
