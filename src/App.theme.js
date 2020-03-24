@@ -6,6 +6,7 @@ const spaceBase = sizeBase;
 
 const primary = "#e40300";
 const black = "#323232";
+const border = "#ddd";
 
 export const NotesGlobalStyle = createGlobalStyle`
   html {
@@ -26,6 +27,7 @@ export const notesTheme = () => {
     colors: {
       primary: primary,
       black: black,
+      border: border,
     },
 
     /**

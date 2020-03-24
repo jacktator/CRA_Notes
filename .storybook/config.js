@@ -1,4 +1,4 @@
-import {addDecorator, addParameters, configure} from '@storybook/react';
+import {addDecorator, addParameters} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
 import {ThemeProvider} from "styled-components";
 import {NotesGlobalStyle, notesTheme} from "../src/App.theme";
