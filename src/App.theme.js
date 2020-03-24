@@ -8,9 +8,16 @@ const primary = "#e40300";
 const black = "#323232";
 
 export const NotesGlobalStyle = createGlobalStyle`
+  html {
+    height: 100vh;
+  }
   body {
     /* Font */
     color: ${props => props.theme.colors.black};
+    height: 100vh;
+  }
+  #root {
+    height: 100vh;
   }
 `;
 

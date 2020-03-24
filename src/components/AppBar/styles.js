@@ -10,6 +10,10 @@ export const useStyles = makeStyles(theme => ({
       display: 'block',
     },
   },
+  link: {
+    textDecoration: 'none',
+    color: 'white',
+  },
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,

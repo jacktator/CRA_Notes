@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -10,11 +11,10 @@ import IconButton from "@material-ui/core/IconButton";
 import AddIcon from '@material-ui/icons/Add';
 import {Link} from "react-router-dom";
 
-const NoteAppBar = props => {
-
-  const {
-    user,
-  } = props;
+const NoteAppBar = ({
+                      user,
+                      onQueryChange,
+                    }) => {
 
   const classes = useStyles();
 
@@ -22,7 +22,7 @@ const NoteAppBar = props => {
     <AppBar position="static">
       <Toolbar>
         <Typography className={classes.title} variant="h6" noWrap>
-          <Link to="/">{user.name}'s Notes</Link>
+          <Link to="/" className={classes.link}>{user.name}'s Notes</Link>
         </Typography>
         <div className={classes.search}>
           <div className={classes.searchIcon}>
@@ -34,6 +34,7 @@ const NoteAppBar = props => {
               root: classes.inputRoot,
               input: classes.inputInput,
             }}
+            onChange={onQueryChange}
             inputProps={{ 'aria-label': 'search' }}
           />
         </div>
@@ -49,6 +50,7 @@ const NoteAppBar = props => {
 
 NoteAppBar.propTypes = {
   user: UserType,
+  onQueryChange: PropTypes.func,
 };
 
 export default NoteAppBar;
