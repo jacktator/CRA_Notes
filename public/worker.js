@@ -1,8 +1,9 @@
-import ROUTES from "../src/constant/routes";
-import PWA_CACHE_NAME from "../src/constant/pwa";
 
-var CACHE_NAME = PWA_CACHE_NAME;
-var urlsToCache = ROUTES;
+var CACHE_NAME = 'pwa-task-manager';
+var urlsToCache = [
+  '/',
+  '/completed'
+];
 
 // Install a service worker
 self.addEventListener('install', event => {
