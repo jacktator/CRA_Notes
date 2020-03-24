@@ -5,12 +5,12 @@ To demonstrate architecture ability, I prioritized showing off knowledge of exis
 - React (Dev)
 - PropTypes (Dev)
 - MaterialUI (UI)
-- DraftJS (UI)
 - StyledComponents (UI)
 - Storybook (UI)
 - Netlify (CI & CD)
+- Snapshot (Testing)
+- DraftJS (UI)
 - PWA
-- notistack
 
 # Features by Priority
 

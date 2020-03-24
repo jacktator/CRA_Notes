@@ -8,7 +8,7 @@
 </p>
 A client-side only note-taking app.
 
-[Planning](Planning.md) | [Live Site](https://notes-crn.netlify.com) | [UI Library](https://notes-crn.netlify.com/storybook/)
+[Planning](Planning.md) | [Live Site](https://notes-crn.netlify.com) | [UI Library](https://notes-crn.netlify.com/storybook/index.html)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

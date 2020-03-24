@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+import {NotesGlobalStyle, notesTheme} from "./App.theme"
 import './App.css';
+import {ThemeProvider} from "styled-components";
 
 const NavBar = () => (
   <div className="navbar">
@@ -35,12 +37,15 @@ const CompletedTasks = () => (
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <Route exact path="/" component={CurrentTasks}/>
-          <Route path="/completed" component={CompletedTasks}/>
-        </div>
-      </BrowserRouter>
+      <ThemeProvider theme={notesTheme()}>
+        <NotesGlobalStyle/>
+        <BrowserRouter>
+          <div>
+            <Route exact path="/" component={CurrentTasks}/>
+            <Route path="/completed" component={CompletedTasks}/>
+          </div>
+        </BrowserRouter>
+      </ThemeProvider>
     );
   }
 }
