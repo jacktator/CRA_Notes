@@ -9,6 +9,7 @@ To demonstrate architecture ability, I prioritized showing off knowledge of exis
 - StyledComponents (UI)
 - Storybook (UI)
 - Netlify (CI & CD)
+- PWA
 - notistack
 
 # Features by Priority
