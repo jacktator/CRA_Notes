@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
+import {dummyUser as user} from "../data/user";
+import DesktopAppBar from "../components/AppBar";
 
 const NavBar = () => (
   <div className="navbar">
@@ -13,6 +15,7 @@ const NavBar = () => (
 const Page = props => {
   return (
     <div>
+      <DesktopAppBar user={user}/>
       <NavBar />
       <p className="page-info">
         {props.title}:

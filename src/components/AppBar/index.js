@@ -8,6 +8,7 @@ import UserType from "../../data/user";
 import {useStyles} from "./styles.js";
 import IconButton from "@material-ui/core/IconButton";
 import AddIcon from '@material-ui/icons/Add';
+import {Link} from "react-router-dom";
 
 const DesktopAppBar = props => {
 
@@ -21,7 +22,7 @@ const DesktopAppBar = props => {
     <AppBar position="static">
       <Toolbar>
         <Typography className={classes.title} variant="h6" noWrap>
-          {user.name}'s Notes
+          <Link to="/">{user.name}'s Notes</Link>
         </Typography>
         <div className={classes.search}>
           <div className={classes.searchIcon}>
@@ -36,9 +37,11 @@ const DesktopAppBar = props => {
             inputProps={{ 'aria-label': 'search' }}
           />
         </div>
-        <IconButton aria-label="display add actions" edge="end" color="inherit">
-          <AddIcon />
-        </IconButton>
+        <Link to="/new">
+          <IconButton aria-label="display add actions" edge="end" color="inherit">
+            <AddIcon />
+          </IconButton>
+        </Link>
       </Toolbar>
     </AppBar>
   );
