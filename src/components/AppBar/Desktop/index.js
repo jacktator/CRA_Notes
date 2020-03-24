@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
+import UserType from "../../../data/user";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -60,6 +61,11 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const DesktopAppBar = props => {
+
+  const {
+    user,
+  } = props;
+
   const classes = useStyles();
 
   return (
@@ -67,7 +73,7 @@ const DesktopAppBar = props => {
       <AppBar position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            {user.name}'s Notes
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -89,7 +95,7 @@ const DesktopAppBar = props => {
 };
 
 DesktopAppBar.propTypes = {
-
+  user: UserType,
 };
 
 export default DesktopAppBar;
