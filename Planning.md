@@ -2,25 +2,28 @@ To demonstrate architecture ability, I prioritized showing off knowledge of exis
 
 # Packages
 
-- React (Dev)
-- PropTypes (Dev)
-- MaterialUI (UI)
-- StyledComponents (UI)
-- Storybook (UI)
-- Netlify (CI & CD)
-- Snapshot (Testing)
-- DraftJS (UI)
-- PWA
+- [x] React (Dev)
+- [x] PropTypes (Dev)
+- [x] MaterialUI (UI)
+- [x] StyledComponents (UI)
+- [x] Storybook (UI)
+- [x] Netlify (CI & CD)
+- [x] Snapshot (Testing)
+- [x] DraftJS (UI)
+- [x] PWA
 
 # Features by Priority
 
 Must Have:
 
-- Notepad (DratJS)
-- Save Locally (IndexDB)
+- [ ] Load saved notes into AllNotes
+- [x] Notepad (DratJS)
+- [x] Save Locally (IndexDB)
+- [x] AutoSave
 
 Nice to Have:
 
-- Markdown (DraftJS)
-- Server Persistance (ORM & MongoDB)
+- [ ] Load saved notes into Editor
+- [ ] Markdown (DraftJS)
+- [ ] Server Persistance (ORM & MongoDB)
 

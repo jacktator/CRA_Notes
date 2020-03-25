@@ -10,11 +10,21 @@ class NoteEditor extends React.Component {
 
     this.editor = null;
 
-    this.state = {editorState: EditorState.createEmpty()};
+    const {
+      contentState,
+      onChange,
+    } =this.props;
+
+    if (contentState) {
+      console.log("hasContent")
+      this.state = {editorState: EditorState.createWithContent(contentState)};
+    } else {
+      this.state = {editorState: EditorState.createEmpty()};
+    }
 
     this.focus = () => this.editor && this.editor.focus();
     this.onChange = (editorState) => {
-      props.onChange(editorState);
+      onChange(editorState);
       this.setState({editorState})
     };
     this.setTextInputRef = element => {

@@ -13,7 +13,10 @@ const Page = ({children}) => {
     <PageWrapper>
       <NoteAppBar user={user}
                   onQueryChange={
-                    e => setQuery(e.target.value ? e.target.value : " ")
+                    e => {
+                      console.log("Search Changed: ", e.target.value);
+                      setQuery(e.target.value ? e.target.value : " ");
+                    }
                   }/>
       <ContentWrapper>
         {children}
