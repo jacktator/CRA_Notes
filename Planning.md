@@ -1,3 +1,5 @@
+This is a no-fuss, extremely streamlined note taker, designed with simplicity in mind.
+
 To demonstrate architecture ability, I prioritized showing off knowledge of existing packages, while achieving core feature. 
 
 # Packages

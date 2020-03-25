@@ -16,7 +16,6 @@ class NoteEditor extends React.Component {
     } =this.props;
 
     if (contentState) {
-      console.log("hasContent")
       this.state = {editorState: EditorState.createWithContent(contentState)};
     } else {
       this.state = {editorState: EditorState.createEmpty()};

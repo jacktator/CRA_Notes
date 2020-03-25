@@ -5,7 +5,9 @@ const request = indexedDB.open("notes", 1);
 request.onupgradeneeded = function(event) {
   // create object store called "pending" and set autoIncrement to true
   const db = event.target.result;
-  db.createObjectStore("pending", { autoIncrement: true, keyPath: 'date' });
+  const store = db.createObjectStore("pending", { autoIncrement: true, keyPath: 'date' });
+  // Creates a previewIndex that we can query on.
+  store.createIndex("previewIndex", "preview");
 };
 
 request.onsuccess = function(event) {
@@ -28,11 +30,12 @@ function saveRecord(record) {
   // access your pending object store
   const store = note.objectStore("pending");
 
+  console.log(record)
   // add record to your store with add method.
   store.add(record);
 }
 
-async function getOne(dateString) {
+function getOne(dateString) {
   return new Promise(
     (resolve, reject) => {
       // open a note on your pending db
@@ -52,7 +55,33 @@ async function getOne(dateString) {
     });
 }
 
+function getNotes() {
+  return new Promise(
+    (resolve, reject) => {
+      // open a note on your pending db
+      const note = indexDB.transaction(["pending"], "readwrite");
+      // access your pending object store
+      const store = note.objectStore("pending");
+      // get all records from store and set to a variable
+      const request = store.getAll();
+
+      request.onerror = function(error) {
+        reject(error);
+      };
+
+      request.onsuccess = function(result) {
+        resolve(result.target.result)
+      }
+    });
+}
+
 function checkDatabase() {
+
+  /**
+   * The idea is, save notes locally in indexDB as `pending` first.
+   * When connected to network, save all those `pending` data into MongoDB, then remove from indexDB
+   */
+
   // open a note on your pending db
   const note = indexDB.transaction(["pending"], "readwrite");
   // access your pending object store

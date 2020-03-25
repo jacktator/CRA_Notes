@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const dummyUser = {
   id: 123,
-  name: "Jack",
+  name: "Jack Song",
 };
 
 const UserType = PropTypes.shape({
