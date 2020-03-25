@@ -128,3 +128,227 @@ Array [
   </button>,
 ]
 `;
+
+exports[`Storyshots NoteEditor Default 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="sc-AxjAm isGUrU"
+    >
+      <div
+        className="sc-AxiKw gcqkiL"
+      >
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          H1
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          H2
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          H3
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          H4
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          H5
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          H6
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          Blockquote
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          UL
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          OL
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          Code Block
+        </div>
+      </div>
+      <div
+        className="sc-AxiKw gcqkiL"
+      >
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          Bold
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          Italic
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          Underline
+        </div>
+        <div
+          className="sc-AxhCb fmsfkV"
+          onMouseDown={[Function]}
+        >
+          Monospace
+        </div>
+      </div>
+      <div
+        className="sc-AxirZ gqmIut"
+        onClick={[Function]}
+      >
+        <div
+          className="DraftEditor-root"
+        >
+          <div
+            className="public-DraftEditorPlaceholder-root"
+          >
+            <div
+              className="public-DraftEditorPlaceholder-inner"
+              id="placeholder-a03tv"
+              style={
+                Object {
+                  "whiteSpace": "pre-wrap",
+                }
+              }
+            >
+              Write a note...
+            </div>
+          </div>
+          <div
+            className="DraftEditor-editorContainer"
+          >
+            <div
+              aria-describedby="placeholder-a03tv"
+              aria-expanded={null}
+              className="notranslate public-DraftEditor-content"
+              contentEditable={true}
+              onBeforeInput={[Function]}
+              onBlur={[Function]}
+              onCompositionEnd={[Function]}
+              onCompositionStart={[Function]}
+              onCopy={[Function]}
+              onCut={[Function]}
+              onDragEnd={[Function]}
+              onDragEnter={[Function]}
+              onDragLeave={[Function]}
+              onDragOver={[Function]}
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              onFocus={[Function]}
+              onInput={[Function]}
+              onKeyDown={[Function]}
+              onKeyPress={[Function]}
+              onKeyUp={[Function]}
+              onMouseUp={[Function]}
+              onPaste={[Function]}
+              onSelect={[Function]}
+              role="textbox"
+              spellCheck={true}
+              style={
+                Object {
+                  "WebkitUserSelect": "text",
+                  "outline": "none",
+                  "userSelect": "text",
+                  "whiteSpace": "pre-wrap",
+                  "wordWrap": "break-word",
+                }
+              }
+              suppressContentEditableWarning={true}
+            >
+              <div
+                data-contents="true"
+              >
+                <div
+                  className={null}
+                  data-block={true}
+                  data-editor="a03tv"
+                  data-offset-key="1s5nk-0-0"
+                >
+                  <div
+                    className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
+                    data-offset-key="1s5nk-0-0"
+                  >
+                    <span
+                      data-offset-key="1s5nk-0-0"
+                      style={Object {}}
+                    >
+                      <br
+                        data-text="true"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <button
+    className="info__show-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#027ac5",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": 12,
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>,
+]
+`;
