@@ -20,18 +20,19 @@ Array [
           className="MuiTypography-root makeStyles-title-1 MuiTypography-h6 MuiTypography-noWrap"
         >
           <a
+            className="makeStyles-link-2"
             href="/"
             onClick={[Function]}
           >
-            Jack
+            Jack Song
             's Notes
           </a>
         </h6>
         <div
-          className="makeStyles-search-2"
+          className="makeStyles-search-3"
         >
           <div
-            className="makeStyles-searchIcon-3"
+            className="makeStyles-searchIcon-4"
           >
             <svg
               aria-hidden="true"
@@ -46,12 +47,12 @@ Array [
             </svg>
           </div>
           <div
-            className="MuiInputBase-root makeStyles-inputRoot-4"
+            className="MuiInputBase-root makeStyles-inputRoot-5"
             onClick={[Function]}
           >
             <input
               aria-label="search"
-              className="MuiInputBase-input makeStyles-inputInput-5"
+              className="MuiInputBase-input makeStyles-inputInput-6"
               onAnimationStart={[Function]}
               onBlur={[Function]}
               onChange={[Function]}
@@ -246,7 +247,7 @@ Array [
           >
             <div
               className="public-DraftEditorPlaceholder-inner"
-              id="placeholder-a03tv"
+              id="placeholder-4ajqd"
               style={
                 Object {
                   "whiteSpace": "pre-wrap",
@@ -260,7 +261,7 @@ Array [
             className="DraftEditor-editorContainer"
           >
             <div
-              aria-describedby="placeholder-a03tv"
+              aria-describedby="placeholder-4ajqd"
               aria-expanded={null}
               className="notranslate public-DraftEditor-content"
               contentEditable={true}
@@ -303,15 +304,15 @@ Array [
                 <div
                   className={null}
                   data-block={true}
-                  data-editor="a03tv"
-                  data-offset-key="1s5nk-0-0"
+                  data-editor="4ajqd"
+                  data-offset-key="42lbc-0-0"
                 >
                   <div
                     className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-                    data-offset-key="1s5nk-0-0"
+                    data-offset-key="42lbc-0-0"
                   >
                     <span
-                      data-offset-key="1s5nk-0-0"
+                      data-offset-key="42lbc-0-0"
                       style={Object {}}
                     >
                       <br
