@@ -18,7 +18,7 @@ To demonstrate architecture ability, I prioritized showing off knowledge of exis
 
 Must Have:
 
-- [ ] Load saved notes into AllNotes
+- [x] Load saved notes into AllNotes
 - [x] Notepad (DratJS)
 - [x] Save Locally (IndexDB)
 - [x] AutoSave
